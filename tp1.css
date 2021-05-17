@@ -58,6 +58,7 @@ body{
     
     padding: 10px;
     padding-left: 45px;
+    margin-bottom: 20px;
 
 }
 .nav-lista{
@@ -81,4 +82,30 @@ body{
 }
 .nav-lista_item-link:hover{
     text-decoration: underline;
+}
+/*-----------------Slider de imagenes-------------*/
+.slider{
+    /*
+        si tengo un slider de imagenes real deberia hacer:text-align: text-align:
+         display: flex;
+        justify-content: center; */
+    text-align: center;
+    background-color: red;
+    margin-bottom: 20px;
+   
+    
+}
+/*-------------------- footer----------------*/
+.footer{
+    background-color: violet;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    padding-top: 0;
+}
+.footer-nav{
+    background-color: salmon;
+}
+.footer-redes{
+    background-color: springgreen;
 }
