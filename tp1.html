@@ -14,11 +14,16 @@
          </a>
          <form action="buscar.js" class="div-form">
              <input type="search" class="div-form_input" placeholder="Buscar en el sitio...">
-             <input type="submit" class="div-form_boton" value="Buscar">
+             <button class="div-form_boton"></button>
+             <!-- <input type="submit" class="div-form_boton" value="Buscar"> -->
          </form>
          <div class="div-botones">
+             <a href="#" class="div-botoncrear">Crear cuenta</a>
+             <a href="#" class="div-botoniniciar">Iniciar Sesión</a>
+             <!--
             <input type="submit" class="div-botoncrear" value="Crear cuenta">
             <input type="submit" class="div-botoniniciar" value="Iniciar Sesión">
+            -->
 
          </div>
          
@@ -40,17 +45,27 @@
                 </li>
             </ul>
         </nav>
-        <a> Los más Populares</a>
+        <a class="text-populares"> Los más Populares</a>
         <div class="slider">
             <img src="cajas.jpg" alt="Imagen de cajas">
         </div>
-        <div class="footer">
+         <!-- -------------------- Aqui empieza footer------------- -->
+        <footer class="footer">
             <div class="footer-redes">
-                aqui redes
+                <h2 class="footer-titulo" >Redes</h2>
+                <div class="footer-redes_imagen">
+                    <img src="instagram.png" alt="Ir a Instagram">
+                    <img src="facebook.png" alt="Ir a facebook">
+                </div>
+                <div class="News">
+                    <h2 class="footer-titulo" >NewsLetter</h2>
+                    <input type="text" class="footer-news">
 
-            </div>
+                </div>                
+
+            </div>           
             <div class="footer-nav">
-                <h2 class="footer-nav_titulo"> Navegación</h2>
+                <h2 class="footer-titulo"> Navegación</h2>
                 <ul class="footer-lista">
                     <li class="footer-lista_item">
                         <a href="#" class="footer-lista_item-link">Inicio
@@ -76,11 +91,24 @@
 
             </div>
             <div class="footer-datos">
-                aqui datos de contacto
+                <h2 class="footer-titulo" >Datos de Contacto</h2>
+                <address class="footer-datos_direccion">
+                    Lavaisse 1680 <br>
+                    San Miguel de Tucumán <br>
+                    Provincia de Tucumán <br>
+                    Tel 381 6334621 <br>
+                    CP 4000
+                </address>
+                <!--<p>Lavaisse 1680</p>
+                <p>San Miguel de Tucumán</p>
+                <p>Provincia de Tucumán</p>
+                <p>Tel 381 6334621</p>
+                <p>CP 4000</p> -->
+
 
             </div>
             
-        </div>
+        </footer>
 
     </div> <!-- Aca cierra el contenedor-->
    
