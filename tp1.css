@@ -14,7 +14,14 @@ body{
     background-color: var(--fondo);
     /* Aqui imagen de fondo
     background-image: url(ruta/ .jpg);
+    Me va a quedar una imagen q se ajusta responsive al ancho y al largo 
+    background-size: 100vw 100vh;
+    para que la imagen se quede fija aunque se cee scroll
+    background-attachment: fixed;
+
      */
+     
+     
      font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -88,10 +95,7 @@ body{
     display: flex;
 
 }
-.nav-lista_item{
-    
 
-}
 .nav-lista_item-link{
    
     display: block;
@@ -185,4 +189,57 @@ body{
     font-size: 10px;
     
 
+}
+/*-----------------------FORMULARIO DE CONTACTO---------------*/
+.div-contacto{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4) ;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+h1{
+    margin: 0;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+h2{
+    margin: 0;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.form-label{
+    font-size: 14px;
+}
+
+.form-nombre, .form-email, .form-tel, .form-area, .form-boton{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+}
+.form-area{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+.form-boton{
+    background: rgb(123, 122, 212);
+    color: var(--negro);
+    padding: 20px;
+}
+.form-boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    .div-contacto{
+        width: 100%;
+    }
 }

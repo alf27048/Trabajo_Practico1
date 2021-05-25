@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="tp1.css">
+</head>
+<body>
+        <div class="cabecera">
+            <a href="tp1.html">
+                <img src="logo1.png" alt="Ir a la home">
+            </a>
+            <form action="buscar.js" class="div-form">
+                 <input type="search" class="div-form_input" placeholder="Buscar en el sitio...">
+                 <button class="div-form_boton"></button>
+             <!-- <input type="submit" class="div-form_boton" value="Buscar"> -->
+            </form>
+         
+            <div class="div-botones">
+                <a href="#" class="div-botoncrear">Crear cuenta</a>
+                <a href="#" class="div-botoniniciar">Iniciar Sesión</a>
+            
+             </div>
+        </div>
+
+        <div class="contenedor">
+            <h1>Contactate con DF Solin Maderas</h1>
+            <h2>Envianos tus dudas, sugerencias y/o comentarios a través del siguiente formulario.</h2>
+            <form action="enviar.js" class="div-contacto">
+                <label class="form-label">
+                    Nombre:
+                    <input type="text" required class="form-nombre">
+                </label>
+                <label class="form-label">
+                    Email:
+                    <input type="email" required class="form-email">
+                </label>
+                <label class="form-label">
+                    Teléfono
+                    <input type="number" class="form-tel">
+                </label>
+                <label class="form-label">
+                    Consulta / Comentarios
+                    <textarea placeholder="Escriba aquí su mensaje" class="form-area"></textarea>
+                </label>
+                <input type="button" value="ENVIAR" class="form-boton">
+
+            </form>
+        </div>
+
+         
+
+        
+
+    
+</body>
+</html>
