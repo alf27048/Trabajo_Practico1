@@ -73,7 +73,13 @@
     <div class="contenedor">
         <a class="text-populares"> Los más Populares</a>
         <div class="slider">
-            <img src="cajas.jpg" alt="Imagen de cajas">
+            <picture>
+                <source srcset="foto.jpg" media="(min-width: 1000px)">
+                <source srcset="foto2.jpg" media="(min-width: 768px)">
+                <img src="foto3.jpg" alt="foto">
+        
+            </picture>
+            <!-- <img src="foto.jpg" alt="Imagen de cajas"> -->
         </div>
          <!-- -------------------- Aqui empieza footer------------- -->
         <footer class="footer">
