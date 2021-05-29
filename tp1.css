@@ -26,20 +26,34 @@ body{
     
 }
 /*---------------------- CABECERA --------------------*/
-.cabecera, .contenedor{
+.cabecera-logo, .nav {
     max-width: 1000px;
     margin: auto;
+    
 
 }
 .cabecera{
+
+    background-color: chartreuse;
+    padding: 5px 0;   
+    margin: 0 20px; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.cabecera-logo{
+    background-color: salmon;
     display: flex;
-    padding: 5px 0;
+   
+
     justify-content: space-between;
     align-items: center;
+   /* flex-wrap: wrap;*/
     
-   
-    
+          
 }
+
 .div-form{
     display: flex;
     
@@ -77,36 +91,90 @@ body{
 .div-botoncrear:hover{
     text-decoration: underline;
 }
-
-.contenedor{
-    background-color: var(--blanco);
-}
-/* ------------ Navegacion ---------------*/
-.nav{
-    
+ /*-------------Estilos del menu-----------*/
+ .nav{
+     background-color: blueviolet;    
     padding: 10px;
     padding-left: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 
+}
+.btn{
+
+    display: none;
 }
 .nav-lista{
     
     list-style: none;
+
     display: flex;
+   
 
 }
-
+.nav-lista_item{
+    border-left: 0.5px solid rgb(158, 156, 150);
+}
 .nav-lista_item-link{
    
     display: block;
-    padding: 4px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: var(--negro);
+    transition: all 0.4s linear;
+    border-radius: 5px;
 
 }
 .nav-lista_item-link:hover{
-    text-decoration: underline;
+    background: rgb(158, 156, 150);
+ 
+}
+.iniciar, .registrarse{
+    display: none;
+    background: rgb(219, 218, 218, 0.5);
+    font-weight: lighter;
+
+}
+.nav-sublista{
+    background-color: chocolate;
+    display: none;
+    list-style: none;
+    position: absolute;
+    /*min-width: 140px;*/
+    padding: 10px 0;
+
+}
+.nav-sublista_item{
+
+    border-bottom: 0.5px solid rgb(218, 215, 215);
+}
+.nav-sublista_item-link{
+   
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+
+}
+
+.nav-sublista_item-link:hover{
+    background: rgb(158, 156, 150);
+
+       
+}
+.productos:hover .nav-sublista {
+    display: block;
+}
+
+/*--------------inicia contenedor-----------*/
+.contenedor{
+    background-color: var(--blanco);
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 170px;
 }
 .text-populares{
     display: block;
@@ -238,7 +306,56 @@ h2{
     cursor: pointer;
 }
 
+/*-------------Responsive ---------------- */
+
+@media (max-width: 768px) {
+    /*:root {
+        --espacio: 10px   puedo setear variables
+    }*/
+    .btn{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .div-form_input{
+        display: none;
+    }
+    .div-botoncrear, .div-botoniniciar{
+        display: none;
+    }
+    .iniciar, .registrarse{
+        display: block;
+    }
+    .modificar{
+        display: block;
+        border: 0.5px solid rgb(218, 215, 215);
+    }
+    .nav-lista {
+        flex-direction: column;
+        /*display: block;*/
+        
+    }
+    .nav-lista_item{
+        border: none;
+        border-bottom: 0.5px solid rgb(218, 215, 215)  ;
+        padding: 10px 0;
+    }
+
+    
+}
+
+
+
 @media (max-width:480px){
+    /*-------------Responsive de Cabecera ---------------- */
+    .div-form_input{
+        display: none;
+    }
+
+    
+
+/* ----------------- responsive de contactos ----------*/
     .div-contacto{
         width: 100%;
     }
