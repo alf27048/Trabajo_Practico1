@@ -305,6 +305,22 @@ h2{
 .form-boton:hover{
     cursor: pointer;
 }
+/*----------------------QUIENES SOMOS ------------------------*/
+.contenedor-info{
+    display: flex;
+    text-align: center;
+}
+.contenedor-imagen{
+
+    background-color: rgb(241, 82, 194);
+}
+.contenedor-texto{
+    background-color: rgb(241, 253, 71);
+    margin: 0 20px;
+    text-align: justify;
+
+}
+
 
 /*-------------Responsive ---------------- */
 
@@ -340,6 +356,11 @@ h2{
         border: none;
         border-bottom: 0.5px solid rgb(218, 215, 215)  ;
         padding: 10px 0;
+    }
+
+    /* ------------------Responsive de Quienes somos--------*/
+    .contenedor-info{
+        display: block;
     }
 
     
