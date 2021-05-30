@@ -101,6 +101,10 @@ body{
 }
 .btn{
 
+    background: none;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
     display: none;
 }
 .nav-lista{
@@ -195,6 +199,7 @@ body{
    
     
 }
+
 /*-------------------- footer----------------*/
 .footer{
     background-color: violet;
@@ -301,12 +306,14 @@ body{
 }
 h1{
     margin: 0;
-    font-size: 23px;
+    font-size: 20px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 h2{
     margin: 0;
     font-size: 17px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -399,7 +406,7 @@ h2{
 
 
 
-@media (max-width:375px){
+@media (max-width:414px){
     /*-------------Responsive de Cabecera ---------------- */
     .div-form_input{
         display: none;
