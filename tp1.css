@@ -205,6 +205,7 @@ body{
     padding-top: 5px;
     padding-bottom: 20px;
     border-top: 1px solid var(--negro);
+    font-weight:normal;
 }
 .footer-nav{
     background-color: salmon;
@@ -215,33 +216,63 @@ body{
 }
 .footer-redes_imagen{
     background-color: chocolate;
+    margin-bottom: 5px;
+    
 }
 
 .footer-titulo{
     font-size: 15px;
     background-color: yellowgreen;
     padding-bottom: 5px;
+    margin-bottom: 2px;
     
+}
+.footer-news{
+    padding: 4px;
+    width: 300px;
+
+}
+.instagram, .whatsaap, .facebook{
+    padding-left: 4px;
+}
+.instagram, .whatsaap, .facebook:hover{
+    cursor: pointer;
+
+}
+.footer-form_boton::before{
+    content: url(enviar.png);
+}
+.footer-form_boton{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .footer-lista{
     background-color: yellow;
     font-size: 15px;
+    
     
 }
 .footer-lista_item{
     background-color: turquoise;
     list-style: none;
     
+    
    
 
 }
 .footer-lista_item-link{
     background-color: rgb(208, 208, 230);
-    display: block;
+    
     text-decoration: none;
     color: var(--negro);
     padding: 3px 0;
+    display: block;
     
+}
+.footer-lista_item:hover{
+    text-decoration:underline;
+
 }
 .footer-redes{
     background-color: springgreen;
@@ -254,7 +285,7 @@ body{
 .footer-datos_direccion{
     background-color: rgb(226, 81, 137);
     font-style: normal;
-    font-size: 10px;
+    font-size: 15px;
     
 
 }
@@ -368,7 +399,7 @@ h2{
 
 
 
-@media (max-width:480px){
+@media (max-width:375px){
     /*-------------Responsive de Cabecera ---------------- */
     .div-form_input{
         display: none;
@@ -380,4 +411,15 @@ h2{
     .div-contacto{
         width: 100%;
     }
+    /*----------Responsive para footer--------------*/
+    .footer{
+        display: block;
+    }
+    .footer-redes{
+        margin-bottom: 5px;
+    }
+    .footer-nav{
+        margin-bottom: 5px;
+    }
+    
 }
