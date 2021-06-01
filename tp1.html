@@ -15,7 +15,7 @@
            </a>
            <form action="buscar.js" class="div-form">
                <input type="search" class="div-form_input" placeholder="Buscar en el sitio...">
-               <button class="div-form_boton"></button>
+               <button aria-label="Buscar" class="div-form_boton"></button>
                <!-- <input type="submit" class="div-form_boton" value="Buscar"> -->
            </form>
            <div class="div-botones">
@@ -28,7 +28,7 @@
             -->
            </div>
         </div> <!-- fin de div cabecera - logo -->
-        <button class="btn" id="boton">
+        <button class="btn" id="boton" aria-label="Menú">
             Menú
         </button>
 
@@ -91,16 +91,24 @@
         <div class="footer-redes">
             <h2 class="footer-titulo" >Redes</h2>
             <div class="footer-redes_imagen">
-                <img src="instagram.png" alt="Ir a Instagram" class="instagram">
-                <img src="facebook.png" alt="Ir a facebook" class="facebook">
-                <img src="whats1.png" alt="Ir a whatsaap" class="whatsaap">
+                <a href="#">
+                    <img src="instagram.png" alt="Ir a Instagram" class="instagram">
+                </a>
+                <a href="#">
+                    <img src="facebook.png" alt="Ir a facebook" class="facebook">
+                </a>
+                <a href="#">
+                    <img src="whats1.png" alt="Ir a whatsaap" class="whatsaap">
+                </a>
             </div>
             <div class="News">
-                <h2 class="footer-titulo" >NewsLetter</h2>
+               <!-- <h2 class="footer-titulo" >NewsLetter</h2>-->
                 <form action="news.js" class="form-news">
+                    <label class="footer-titulo">NewsLetter
                 
-                     <input type="email" class="footer-news">
-                     <button class="footer-form_boton"></button>
+                     <input type="email" class="footer-news" placeholder="email">
+                    </label>
+                     <button class="footer-form_boton" aria-label="Enviar"></button>
                 </form>     
 
 

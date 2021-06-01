@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: var(--fondo);
+    
     /* Aqui imagen de fondo
     background-image: url(ruta/ .jpg);
     Me va a quedar una imagen q se ajusta responsive al ancho y al largo 
@@ -25,6 +25,27 @@ body{
      font-family: Arial, Helvetica, sans-serif;
     
 }
+.sr-only{
+   /* position: absolute;*/
+    z-index: 1;
+    background-color:aquamarine;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    
+
+}
+.sr-only:focus{
+    background-color: rgb(210, 231, 18);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    clip: auto;
+}
 /*---------------------- CABECERA --------------------*/
 .cabecera-logo, .nav {
     max-width: 1000px;
@@ -34,16 +55,17 @@ body{
 }
 .cabecera{
 
-    background-color: chartreuse;
+    background-color: var(--blanco);
     padding: 5px 0;   
-    margin: 0 20px; 
+    margin: 0; 
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
 }
 .cabecera-logo{
-    background-color: salmon;
+   /* background-color: salmon;*/
     display: flex;
    
 
@@ -67,8 +89,9 @@ body{
     
     cursor: pointer;
     padding: 0 15px;
-    /*background: none;
-    border: none;*/
+    /*background: none; */
+    border: none;
+    border-radius: 0 6px 6px 0;
 
 }
 .div-form_boton::before{
@@ -93,7 +116,7 @@ body{
 }
  /*-------------Estilos del menu-----------*/
  .nav{
-     background-color: blueviolet;    
+   /*  background-color: blueviolet;  */  
     padding: 10px;
     padding-left: 45px;
     margin-bottom: 0;
@@ -140,7 +163,7 @@ body{
 
 }
 .nav-sublista{
-    background-color: chocolate;
+    background-color: var(--blanco);
     display: none;
     list-style: none;
     position: absolute;
@@ -169,16 +192,17 @@ body{
 
        
 }
-.productos:hover .nav-sublista {
+.productos:hover .nav-sublista, .productos:focus-within .nav-sublista  {
     display: block;
 }
 
 /*--------------inicia contenedor-----------*/
 .contenedor{
-    background-color: var(--blanco);
+  /*  background-color: var(--blanco);*/
     max-width: 1000px;
     margin: auto;
     padding-top: 170px;
+    margin-bottom: 20px;
 }
 .text-populares{
     display: block;
@@ -194,40 +218,40 @@ body{
          display: flex;
         justify-content: center; */
     text-align: center;
-    background-color: red;
-    margin-bottom: 20px;
+   /* background-color: red;*/
+   
    
     
-}
+} 
 
 /*-------------------- footer----------------*/
 .footer{
-    background-color: violet;
+    background-color: rgb(238, 236, 238); 
     display: flex;
     gap: 30px;
     /*grid-template-columns: 1fr 1fr 1fr;*/
-    padding: 40px;
+    padding: 100px;
     padding-top: 5px;
     padding-bottom: 20px;
-    border-top: 1px solid var(--negro);
+    border-top: 0.5px solid var(--negro);
     font-weight:normal;
 }
 .footer-nav{
-    background-color: salmon;
+  /*  background-color: salmon;*/
 }
 .footer-redes{
 
     flex-grow: 1;
 }
 .footer-redes_imagen{
-    background-color: chocolate;
+ /*   background-color: chocolate;*/
     margin-bottom: 5px;
     
 }
 
 .footer-titulo{
     font-size: 15px;
-    background-color: yellowgreen;
+  /*  background-color: yellowgreen;*/
     padding-bottom: 5px;
     margin-bottom: 2px;
     
@@ -238,28 +262,33 @@ body{
 
 }
 .instagram, .whatsaap, .facebook{
-    padding-left: 4px;
+    padding-left: 6px;
 }
 .instagram, .whatsaap, .facebook:hover{
     cursor: pointer;
 
 }
+.instagram:focus-within{
+    border: darkblue solid 1px;
+}
 .footer-form_boton::before{
     content: url(enviar.png);
 }
 .footer-form_boton{
-    background: none;
+    background:none;
     border: none;
+    
+   
     cursor: pointer;
 }
 .footer-lista{
-    background-color: yellow;
+   /* background-color: yellow; */
     font-size: 15px;
     
     
 }
 .footer-lista_item{
-    background-color: turquoise;
+  /*  background-color: turquoise;  */
     list-style: none;
     
     
@@ -267,7 +296,7 @@ body{
 
 }
 .footer-lista_item-link{
-    background-color: rgb(208, 208, 230);
+   /* background-color: rgb(208, 208, 230);  */
     
     text-decoration: none;
     color: var(--negro);
@@ -280,15 +309,15 @@ body{
 
 }
 .footer-redes{
-    background-color: springgreen;
+ /*   background-color: springgreen;   */
 }
 .footer-datos{
     font-size: 15px;
-    background-color: whitesmoke;
+   /*  background-color: whitesmoke;  */
     
 }
 .footer-datos_direccion{
-    background-color: rgb(226, 81, 137);
+  /*  background-color: rgb(226, 81, 137);  */
     font-style: normal;
     font-size: 15px;
     
@@ -298,19 +327,20 @@ body{
 .div-contacto{
     width: 450px;
     margin: auto;
-    background: rgba(0,0,0,0.4) ;
+    background: rgba(0,0,0,0.4) ;  
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
+    
 }
-h1{
+.contacto-h1{
     margin: 0;
     font-size: 20px;
     margin-left: 10px;
     margin-bottom: 20px;
 }
-h2{
+.contacto-h2{
     margin: 0;
     font-size: 17px;
     margin-left: 10px;
@@ -336,7 +366,7 @@ h2{
 
 }
 .form-boton{
-    background: rgb(123, 122, 212);
+    background: rgb(123, 122, 212); 
     color: var(--negro);
     padding: 20px;
 }
@@ -350,10 +380,10 @@ h2{
 }
 .contenedor-imagen{
 
-    background-color: rgb(241, 82, 194);
+   /* background-color: rgb(241, 82, 194);   */
 }
 .contenedor-texto{
-    background-color: rgb(241, 253, 71);
+   /* background-color: rgb(241, 253, 71);   */
     margin: 0 20px;
     text-align: justify;
 
@@ -371,6 +401,12 @@ h2{
     }
     .nav{
         display: none;
+    }
+    .div-form_boton{
+        width: 60px;
+        padding: 5px;
+        border-radius: 6px;
+
     }
     .div-form_input{
         display: none;

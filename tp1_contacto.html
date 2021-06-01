@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="tp1.css">
 </head>
 <body>
+
+    <!-- ---------------AQUI PONGO SKIP NAVIGATION-------------->
+    <a href="#contenido" class="sr-only"> Saltear navegación</a>
+
+
     <div class="cabecera">
         <div class="cabecera-logo">
            <a href="tp1.html">
@@ -71,7 +76,7 @@
            </nav>
    </div> <!-- fin de cabecera---> 
 
-        <div class="contenedor">
+        <div class="contenedor" id="contenido">
             <h1 class="contacto-h1">Contactate con DF Solin Maderas</h1>
             <h2 class="contacto-h2">Envianos tus dudas, sugerencias y/o comentarios a través del siguiente formulario.</h2>
             <form action="enviar.js" class="div-contacto">
@@ -102,16 +107,22 @@
         <div class="footer-redes">
             <h2 class="footer-titulo" >Redes</h2>
             <div class="footer-redes_imagen">
-                <img src="instagram.png" alt="Ir a Instagram" class="instagram">
-                <img src="facebook.png" alt="Ir a facebook" class="facebook">
-                <img src="whats1.png" alt="Ir a whatsaap" class="whatsaap">
+                <a href="#">
+                    <img src="instagram.png" alt="Ir a Instagram" class="instagram">
+                </a>
+                <a href="#">
+                    <img src="facebook.png" alt="Ir a facebook" class="facebook">
+                </a>
+                <a href="#">
+                    <img src="whats1.png" alt="Ir a whatsaap" class="whatsaap">
+                </a>
             </div>
             <div class="News">
                 <h2 class="footer-titulo" >NewsLetter</h2>
                 <form action="news.js" class="form-news">
                 
                      <input type="email" class="footer-news">
-                     <button class="footer-form_boton"></button>
+                     <button class="footer-form_boton" aria-label="Enviar"></button>
                 </form>     
 
 
