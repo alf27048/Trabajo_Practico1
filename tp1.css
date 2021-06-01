@@ -11,7 +11,7 @@
 }
 
 body{
-    
+        
     /* Aqui imagen de fondo
     background-image: url(ruta/ .jpg);
     Me va a quedar una imagen q se ajusta responsive al ancho y al largo 
@@ -236,16 +236,22 @@ body{
     border-top: 0.5px solid var(--negro);
     font-weight:normal;
 }
-.footer-nav{
-  /*  background-color: salmon;*/
-}
+/*.footer-nav{
+  /*  background-color: salmon;
+}*/
 .footer-redes{
 
     flex-grow: 1;
 }
 .footer-redes_imagen{
  /*   background-color: chocolate;*/
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.footer-label{
+    font-size: 15px;
+    font-weight: bolder;
     
 }
 
@@ -308,9 +314,9 @@ body{
     text-decoration:underline;
 
 }
-.footer-redes{
- /*   background-color: springgreen;   */
-}
+/*.footer-redes{
+    background-color: springgreen;   
+}*/
 .footer-datos{
     font-size: 15px;
    /*  background-color: whitesmoke;  */
@@ -378,10 +384,10 @@ body{
     display: flex;
     text-align: center;
 }
-.contenedor-imagen{
+/*.contenedor-imagen{
 
-   /* background-color: rgb(241, 82, 194);   */
-}
+    background-color: rgb(241, 82, 194);   
+}*/
 .contenedor-texto{
    /* background-color: rgb(241, 253, 71);   */
     margin: 0 20px;
